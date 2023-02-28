@@ -1,7 +1,9 @@
 using CompanyEmployees.Extensions;
+using CompanyEmployees.Migrations;
 using Contracts;
 using Microsoft.AspNetCore.HttpOverrides;
 using NLog;
+using Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,11 @@ LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nl
 builder.Services.ConfigureCors();
 builder.Services.ConfigureIISIntegration();
 builder.Services.ConfigureLoggerService();
+builder.Services.AddSingleton<DapperContext>();
+builder.Services.AddSingleton<Database>();
+builder.Services.ConfigureFluentMigrator(builder.Configuration);
+builder.Services.ConfigureRepositoryManager();
+builder.Services.ConfigureServiceManager();
 
 builder.Services.AddControllers()
 	.AddApplicationPart(typeof(CompanyEmployees.Presentation.AssemblyReference).Assembly);
@@ -34,5 +41,7 @@ app.UseCors("CorsPolicy");
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MigrateDatabase(logger);
 
 app.Run();
