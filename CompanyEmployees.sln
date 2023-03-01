@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Contracts", "Service.Contracts\Service.Contracts.csproj", "{F100BB1F-8C3E-427E-BFF9-10202BB5B583}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyEmployees.Presentation", "CompanyEmployees.Presentation\CompanyEmployees.Presentation.csproj", "{1379522C-18E2-4169-91FA-747D71DBE917}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyEmployees.Presentation", "CompanyEmployees.Presentation\CompanyEmployees.Presentation.csproj", "{1379522C-18E2-4169-91FA-747D71DBE917}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{FB06CCD0-DBED-47A0-8748-6A503148E7AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{FB06CCD0-DBED-47A0-8748-6A503148E7AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Identity.Dapper", "AspNetCore.Identity.Dapper\AspNetCore.Identity.Dapper.csproj", "{997D26F1-7B7B-427D-860A-AAB6702DF779}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{FB06CCD0-DBED-47A0-8748-6A503148E7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB06CCD0-DBED-47A0-8748-6A503148E7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB06CCD0-DBED-47A0-8748-6A503148E7AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{997D26F1-7B7B-427D-860A-AAB6702DF779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{997D26F1-7B7B-427D-860A-AAB6702DF779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{997D26F1-7B7B-427D-860A-AAB6702DF779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{997D26F1-7B7B-427D-860A-AAB6702DF779}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
